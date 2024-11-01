@@ -7,7 +7,6 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 from config_data.config import ULR_WEB_APP
 
 
-
 def greeting_buttons() -> InlineKeyboardMarkup:
     """
     Keyboard creation function.
