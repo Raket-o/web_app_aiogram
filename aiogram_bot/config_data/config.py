@@ -12,4 +12,4 @@ else:
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 START_MESSAGE = os.getenv("START_MESSAGE")
-ULR_WEB_APP = os.getenv("ULR_WEB_APP")
+ULR_WEB_APP = f'https://{os.getenv("ULR_WEB_APP")}'
