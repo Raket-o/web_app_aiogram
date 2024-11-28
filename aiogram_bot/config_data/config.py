@@ -10,6 +10,7 @@ if not find_dotenv():
 else:
     load_dotenv()
 
+ALGORITHM = "HS256"
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 START_MESSAGE = os.getenv("START_MESSAGE")
-ULR_WEB_APP = f'https://{os.getenv("ULR_WEB_APP")}'
+ULR_WEB_APP = f'https://{os.getenv("ULR_WEB_APP")}/auth/telegram/'

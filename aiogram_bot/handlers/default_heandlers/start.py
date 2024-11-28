@@ -17,7 +17,7 @@ async def start_command(message: [types.CallbackQuery, types.Message]) -> None:
     telegram_id = message.from_user.id
     full_name = message.from_user.full_name
 
-    kb = greeting_buttons()
+    kb = greeting_buttons(message)
 
     if isinstance(message, types.Message):
         await message.answer(START_MESSAGE, parse_mode="HTML", reply_markup=kb)
