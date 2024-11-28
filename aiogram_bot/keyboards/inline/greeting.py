@@ -25,14 +25,6 @@ def greeting_buttons(message: types.Message) -> InlineKeyboardMarkup:
     }
     jwt_token = create_access_token(data_for_token)
 
-
-    # import jwt
-    # from jwt.exceptions import InvalidSignatureError
-    # from config_data.config import ALGORITHM, BOT_TOKEN
-    # payload = jwt.decode(jwt_token, BOT_TOKEN, algorithms=[ALGORITHM])
-    # print(type(payload), payload)
-    print(ULR_WEB_APP+jwt_token)
-
     keyboard_builder.button(
         text="Запустить приложение",
         web_app=WebAppInfo(url=ULR_WEB_APP+jwt_token),
